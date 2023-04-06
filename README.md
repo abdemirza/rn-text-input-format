@@ -56,6 +56,11 @@ If you would like to contribute to this project, please follow the guidelines be
 
 Please make sure that your code follows the existing code style and that your pull request passes all tests before submitting it.
 
+# Author
+
+[abdemirza](mailto:abdemirza@gmail.com)
+
+
 ## License
 
 This package is distributed under the MIT License. See the LICENSE file for more information.
