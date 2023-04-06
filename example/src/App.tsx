@@ -1,31 +1,17 @@
 import * as React from 'react';
-
-import { StyleSheet, View, Text } from 'react-native';
-import { multiply } from 'rn-text-input-format';
+import TextInputWithSeparator from 'rn-text-input-format';
+import { SafeAreaView } from 'react-native';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    multiply(3, 7).then(setResult);
-  }, []);
-
+  const [input, setInput] = React.useState('');
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <SafeAreaView>
+      <TextInputWithSeparator
+        placeholder="Enter number"
+        onChangeText={setInput}
+        value={input}
+        style={{ backgroundColor: 'yellow', width: '100%', height: 100 }}
+      />
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  box: {
-    width: 60,
-    height: 60,
-    marginVertical: 20,
-  },
-});
