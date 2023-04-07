@@ -1,7 +1,7 @@
 {
   "name": "rn-text-input-format",
   "version": "0.1.4",
-  "description": "test",
+  "description": "A custom text input that only accepts numerical input and automatically formats the number with separators.",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
   "types": "lib/typescript/src/index.d.ts",
